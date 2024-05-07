@@ -37,7 +37,8 @@ through「Before playing murder mystery」to ensure a smooth
 gameplay.
 			</p>
 			<!-- To replace with an actual before playing murder mystery page -->
-			<button onClick="window.open('https://ibarayugi.wixsite.com/iraba/%E3%83%9E%E3%83%BC%E3%83%80%E3%83%BC%E3%83%9F%E3%82%B9%E3%83%86%E3%83%AA%E3%83%BC%E3%82%92%E5%A7%8B%E3%82%81%E3%82%8B%E5%89%8D%E3%81%AB', '_blank')" 
+			<button 
+				onClick="window.open('https://ibarayugi.wixsite.com/iraba/%E3%83%9E%E3%83%BC%E3%83%80%E3%83%BC%E3%83%9F%E3%82%B9%E3%83%86%E3%83%AA%E3%83%BC%E3%82%92%E5%A7%8B%E3%82%81%E3%82%8B%E5%89%8D%E3%81%AB', '_blank')" 
 				onMouseOver="this.style.opacity=0.8"
    			onMouseOut="this.style.opacity=1"
 				style="border-radius: 4px; 
@@ -107,13 +108,20 @@ Once decided, please proceed to the next step.
 			</div>
 		</div>
 
-		<button style="border-radius: 4px; 
-		padding: 4px 8px;
-		margin-top: 16px;
-		color: white;
-		cursor:	pointer;
-		font-size: 1.3em;
-		background: #646464; color: white">Next</button>
+		<button 				
+		onClick="window.open('./introduction', '_blank')" 
+		onMouseOver="this.style.color='#646464'"
+		onMouseOut="this.style.color='white'"
+		style="border-radius: 4px; 
+			transition: 0.3s;
+			padding: 4px 8px;
+			margin-top: 16px;
+			color: white;
+			cursor:	pointer;
+			font-size: 1.3em;
+			background: #646464; 
+			color: white"
+		>Next</button>
 	</div>
 
 </body>
