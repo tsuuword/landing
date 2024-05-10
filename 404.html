@@ -8,9 +8,9 @@
   <title>Two Word</title>
   <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <script>
-    window.onload = () => {
+    document.addEventListener("DOMContentLoaded", (event) => {
       document.getElementById('iframe').src = `https://twoworddotcom.wordpress.com/${window.location.pathname}`
-    }
+    })
   </script>
 </head>
 
