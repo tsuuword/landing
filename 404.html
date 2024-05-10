@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Redirect</title>
-     <meta charset="UTF-8" />
-     <meta http-equiv="refresh" content="1; URL=https://tsuuword.com" />
-   </head>
-   <body>
-     <p>This page has been moved. If you are not redirected within 1 seconds, click <a href="https://tsuuword.com">here</a> to go to the Two Word homepage.</p>
-   </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Two Word</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script>
+    window.onload = () => {
+      document.getElementById('iframe').src = window.location.pathname
+    }
+  </script>
+</head>
+
+<body>
+  <iframe id='iframe' src="https://twoworddotcom.wordpress.com/"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation allow-forms allow-modals allow-pointer-lock allow-downloads allow-orientation-lock"
+    style="
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        border: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        z-index: 999999;
+        height: 100%;
+      ">
+  </iframe>
+
+  <!-- Banner to overwrite wordpress promotion banner -->
+  <div style="
+      height: 52px;
+      z-index: 9999990;
+      background: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    ">
+  </div>
+</body>
+
 </html>
